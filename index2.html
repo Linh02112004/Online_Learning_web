@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style/style2.css">
+<title>Học trực tuyến môn toán</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Học trực tuyến môn toán</h1>
+</div>
+
+<div class="nav">
+  <div>Giới thiệu</div>
+  <div>Tự luyện</div>
+  <div>Thư viện</div>
+  <div>Hướng dẫn đăng ký học</div>
+  <div>Hỗ trợ</div>
+</div>
+
+<div class="course-list">
+  <div class="course">Lớp 12</div>
+  <div class="course">Lớp 11</div>
+  <div class="course">Lớp 10</div>
+  <div class="course">Lớp 9</div>
+  <div class="course">Lớp 8</div>
+  <div class="course">Lớp 7</div>
+  <div class="course">Lớp 6</div>
+  <div class="course">Lớp 5</div>
+  <div class="course">Lớp 4</div>
+  <div class="course">Lớp 3</div>
+  <div class="course">Lớp 2</div>
+  <div class="course">Lớp 1</div>
+</div>
+
+<script>
+  const courseList = document.querySelectorAll('.course');
+
+  const chapterContents = [
+    // Nội dung chương của mỗi lớp từ 1 đến 12
+    [
+      // Lớp 12
+      ["Nội dung chương 1 đại số của lớp 12", "Nội dung chương 2 đại số của lớp 12", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 12", "Nội dung chương 2 hình học của lớp 12", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 11
+      ["Nội dung chương 1 đại số của lớp 11", "Nội dung chương 2 đại số của lớp 11", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 11", "Nội dung chương 2 hình học của lớp 11", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 10
+      ["Nội dung chương 1 đại số của lớp 10", "Nội dung chương 2 đại số của lớp 10", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 10", "Nội dung chương 2 hình học của lớp 10", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 9
+      ["Nội dung chương 1 đại số của lớp 9", "Nội dung chương 2 đại số của lớp 9", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 9", "Nội dung chương 2 hình học của lớp 9", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 8
+      ["Nội dung chương 1 đại số của lớp 8", "Nội dung chương 2 đại số của lớp 8", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 8", "Nội dung chương 2 hình học của lớp 8", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 7
+      ["Nội dung chương 1 đại số của lớp 7", "Nội dung chương 2 đại số của lớp 7", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 7", "Nội dung chương 2 hình học của lớp 7", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 6
+      ["Nội dung chương 1 đại số của lớp 6", "Nội dung chương 2 đại số của lớp 6", /*Thêm nội dung của các chương khác ở đây*/],
+      ["Nội dung chương 1 hình học của lớp 6", "Nội dung chương 2 hình học của lớp 6", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 5
+      ["Nội dung chương 1 của lớp 5", "Nội dung chương 2 của lớp 5", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 4
+      ["Nội dung chương 1 của lớp 4", "Nội dung chương 2 của lớp 4", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 3
+      ["Nội dung chương 1 của lớp 3", "Nội dung chương 2 của lớp 3", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 2
+      ["Nội dung chương 1 của lớp 2", "Nội dung chương 2 của lớp 2", /*Thêm nội dung của các chương khác ở đây*/]
+    ],
+    [
+      // Lớp 1
+      ["Nội dung chương 1 của lớp 1", "Nội dung chương 2 của lớp 1", /*Thêm nội dung của các chương khác ở đây*/]
+    ]
+  ];
+
+  courseList.forEach((course, index) => {
+    course.addEventListener('mouseenter', () => {
+      const chapters = course.querySelector('.chapter-list');
+      if (chapters) {
+        chapters.style.display = 'block';
+      } else {
+        const chapterList = document.createElement('div');
+        chapterList.className = 'chapter-list';
+        
+        const currentCourseChapters = chapterContents[index]; // Lấy nội dung chương cho lớp hiện tại
+        
+        currentCourseChapters.forEach((category, i) => {
+          const categoryTitle = document.createElement('p');
+          categoryTitle.textContent = i === 0 ? 'Đại số:' : 'Hình học:';
+          categoryTitle.classList.add(i === 0 ? 'algebra' : 'geometry');
+          chapterList.appendChild(categoryTitle);
+          
+          category.forEach((content, j) => {
+            const chapter = document.createElement('p');
+            chapter.innerHTML = `Chương ${j + 1}: ${content}`;
+            chapterList.appendChild(chapter);
+          });
+        });
+        
+        course.appendChild(chapterList);
+      }
+    });
+
+    course.addEventListener('mouseleave', () => {
+      const chapters = course.querySelector('.chapter-list');
+      if (chapters) {
+        chapters.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
