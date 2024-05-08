@@ -1,0 +1,48 @@
+/* style/style.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+
+}
+
+.nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.course {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chapter-list {
+  display: none;
+  padding-left: 20px;
+}
+
+.chapter-list div {
+  margin-bottom: 5px;
+}
+
+  .chapter-list {
+    margin-left: 20px; /* Lùi vào phải */
+    display: none; /* Ẩn ban đầu */
+  }
+  .algebra {
+    color: blue; /* Màu chữ xanh */
+  }
+  .geometry {
+    color: blue; /* Màu chữ xanh */
+  }
