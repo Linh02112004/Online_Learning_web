@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style2.css">
+  <link rel="stylesheet" href="style2.css">
   <title>Học trực tuyến môn toán</title>
 </head>
 
@@ -21,20 +21,49 @@
   <div>Hỗ trợ</div>
 </div>
 
-<h3 style="color: red">Các khóa học</h3>
-<div class="course-list">
-  <div class="course">Lớp 12</div>
-  <div class="course">Lớp 11</div>
-  <div class="course">Lớp 10</div>
-  <div class="course">Lớp 9</div>
-  <div class="course">Lớp 8</div>
-  <div class="course">Lớp 7</div>
-  <div class="course">Lớp 6</div>
-  <div class="course">Lớp 5</div>
-  <div class="course">Lớp 4</div>
-  <div class="course">Lớp 3</div>
-  <div class="course">Lớp 2</div>
-  <div class="course">Lớp 1</div>
+<div class="divfull">
+  <div class="div1">
+    <h3 style="color: red">Các khóa học</h3>
+    <div class="course-list">
+      <div class="course">Lớp 12</div>
+      <div class="course">Lớp 11</div>
+      <div class="course">Lớp 10</div>
+      <div class="course">Lớp 9</div>
+      <div class="course">Lớp 8</div>
+      <div class="course">Lớp 7</div>
+      <div class="course">Lớp 6</div>
+      <div class="course">Lớp 5</div>
+      <div class="course">Lớp 4</div>
+      <div class="course">Lớp 3</div>
+      <div class="course">Lớp 2</div>
+      <div class="course">Lớp 1</div>
+    </div>
+  </div>
+
+  <div class="div2">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Anh/Anh1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Anh/Anh2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Anh/Anh3.jpg" style="width:100%">
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -139,6 +168,28 @@
       }
     });
   });
+
+</script>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 </script>
 
 </body>
