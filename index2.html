@@ -10,8 +10,36 @@
 <body>
 
 <div class="header">
-
+  <div class="div1">
+    <img src="Anh/header/anh1.jpg" alt="Math">
+  </div>
+  <div class="div2">
+    <div class="text-input">
+      <input type="text" id="inputText" placeholder="Nhập chữ vào đây">
+      <img src="Anh/header/anh2.jpg" alt="Tìm kiếm" class="search-icon" id="searchIcon">
+    </div>
+  </div>
+  <div class="div3">
+    <img src="Anh/header/anh3.jpg" alt="Login Icon" class="login-icon" id="loginIcon">
+  </div>
 </div>
+
+<script>
+  // Xử lý sự kiện click vào icon tìm kiếm
+  const inputText = document.getElementById('inputText');
+  const searchIcon = document.getElementById('searchIcon');
+
+  searchIcon.addEventListener('click', function() {
+    inputText.focus();
+  });
+
+  // Xử lý sự kiện click vào icon đăng nhập
+  const loginIcon = document.getElementById('loginIcon');
+
+  loginIcon.addEventListener('click', function() {
+    window.open('index1.html', '_blank');
+  });
+</script>
 
 <div class="nav">
   <div>Giới thiệu</div>
@@ -22,7 +50,7 @@
 </div>
 
 <div class="divfull">
-  <div class="div1">
+  <div class="div4">
     <h3 style="color: red">Các khóa học</h3>
     <div class="course-list">
       <div class="course">Lớp 12</div>
@@ -40,21 +68,21 @@
     </div>
   </div>
 
-  <div class="div2">
+  <div class="div5">
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext"></div>
-        <img src="Anh/Anh1.jpg" style="width:100%">
+        <img src="Anh/slide/Anh1.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
-        <img src="Anh/Anh2.jpg" style="width:100%">
+        <img src="Anh/slide/Anh2.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
-        <img src="Anh/Anh3.jpg" style="width:100%">
+        <img src="Anh/slide/Anh3.jpg" style="width:100%">
       </div>
 
       <div style="text-align:center">
