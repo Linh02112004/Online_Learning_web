@@ -1,0 +1,35 @@
+.head{
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    text-align: center;
+    background-color:rgb(230, 149, 190);
+    padding: 30px;
+}
+.div1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: rgb(242, 208, 242);
+    font-size: 15px;
+}
+.div2,.div3{
+    width: 50%;
+    margin-top: 20px;
+}
+.div3{
+    background-color:rgb(174, 233, 246);
+    border: 3px solid #fefefe;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+.div4{
+    background-color:rgb(174, 233, 246);
+    height: 300px;
+    border: 3px solid #fefefe;
+    border-radius: 30px;
+}
+.div5{
+    background-color:rgb(174, 233, 246);
+    height: 300px;
+    border: 3px solid #fefefe;
+    border-radius: 30px;
+}
