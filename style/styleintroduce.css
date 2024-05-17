@@ -6,6 +6,7 @@
     padding: 30px;
 }
 .div1{
+    height: 600px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     background-color: rgb(242, 208, 242);
@@ -16,6 +17,7 @@
     margin-top: 20px;
 }
 .div3{
+    height: 400px;
     background-color:rgb(174, 233, 246);
     border: 3px solid #fefefe;
     border-radius: 30px;
@@ -28,8 +30,9 @@
     border-radius: 30px;
 }
 .div5{
+    margin-top: 10px;
     background-color:rgb(174, 233, 246);
-    height: 300px;
+    height: 200px;
     border: 3px solid #fefefe;
     border-radius: 30px;
 }
