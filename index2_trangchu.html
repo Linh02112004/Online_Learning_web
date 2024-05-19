@@ -4,221 +4,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/style2.css">
+  <!-- link này để lấy icon tìm kiếm -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Hỗ trợ học toán trực tuyến</title>
 </head>
 
 <body>
-
 <div class="header">
-  <div class="div1">
-    <img src="Anh/header/anh1.jpg" alt="Math">
+  <div class = "logo"><img src="Anh/header/anh1.jpg "></div>
+  <div class = "tenweb">
+    <h1>TRANG WEB HỖ TRỢ HỌC TOÁN TRỰC TUYẾN</h1>
   </div>
-  <div class="div2">
-    <div class="text-input">
-      <input type="text" id="inputText" placeholder="Nhập chữ vào đây">
-      <img src="Anh/header/anh2.jpg" alt="Tìm kiếm" class="search-icon" id="searchIcon">
-    </div>
+  <div class = "timkiem">
+    <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+    <a><i class="fas fa-search-location"></i></a>
   </div>
-  <div class="div3">
-    <img src="Anh/header/anh3.jpg" alt="Login Icon" class="login-icon" id="loginIcon">
-  </div>
+  <div class = "logo_login"><a href="index1_dangnhap.html" target="_blank"><img src="Anh/header/anh3.jpg "></a></div>
 </div>
-
-<script>
-  // Xử lý sự kiện click vào icon tìm kiếm
-  const inputText = document.getElementById('inputText');
-  const searchIcon = document.getElementById('searchIcon');
-
-  searchIcon.addEventListener('click', function() {
-    inputText.focus();
-  });
-
-  // Xử lý sự kiện click vào icon đăng nhập
-  const loginIcon = document.getElementById('loginIcon');
-
-  loginIcon.addEventListener('click', function() {
-    window.open('index1_dangnhap.html', '_blank');
-  });
-</script>
 
 <div class="nav">
   <div><a href = "index3_gthieu.html" target="_blank">Giới thiệu</a></div>
-  <div>Tự luyện</div>
-  <div>Thư viện</div>
-  <div>Hướng dẫn đăng ký học</div>
-  <div>Hỗ trợ</div>
+  <div><a href = "index4_tluyen.html" target="_blank">Tự luyện</a></div>
+  <div><a href = "index5_thuvien.html" target="_blank">Thư viện</a></div>
+  <div><a href = "index6_huongdan.html" target="_blank">Hướng dẫn đăng ký học</a></div>
+  <div><a href = "index7_hotro.html" target="_blank">Hỗ trợ</a></div>
 </div>
+<section>
+  <video autoplay muted loop id="video1">
+    <source src="anh/background/video1.mp4" type="video/mp4">
+  </video>
+  <div class = "content">
+  <div class="divfull">
+    <div class="div4">
+      <h3 style="color: red">Các khóa học</h3>
+      <div class="course-list">
+        <div class="course">Lớp 12</div>
+        <div class="course">Lớp 11</div>
+        <div class="course">Lớp 10</div>
+        <div class="course">Lớp 9</div>
+        <div class="course">Lớp 8</div>
+        <div class="course">Lớp 7</div>
+        <div class="course">Lớp 6</div>
+        <div class="course">Lớp 5</div>
+        <div class="course">Lớp 4</div>
+        <div class="course">Lớp 3</div>
+        <div class="course">Lớp 2</div>
+        <div class="course">Lớp 1</div>
+      </div>
+    </div>
 
-<div class="divfull">
-  <div class="div4">
-    <h3 style="color: red">Các khóa học</h3>
-    <div class="course-list">
-      <div class="course">Lớp 12</div>
-      <div class="course">Lớp 11</div>
-      <div class="course">Lớp 10</div>
-      <div class="course">Lớp 9</div>
-      <div class="course">Lớp 8</div>
-      <div class="course">Lớp 7</div>
-      <div class="course">Lớp 6</div>
-      <div class="course">Lớp 5</div>
-      <div class="course">Lớp 4</div>
-      <div class="course">Lớp 3</div>
-      <div class="course">Lớp 2</div>
-      <div class="course">Lớp 1</div>
+    <div class="div5">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Anh/slide/Anh1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Anh/slide/Anh2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Anh/slide/Anh3.jpg" style="width:100%">
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="div5">
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="Anh/slide/Anh1.jpg" style="width:100%">
-      </div>
+  <script>
+    const courseList = document.querySelectorAll('.course');
 
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="Anh/slide/Anh2.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="Anh/slide/Anh3.jpg" style="width:100%">
-      </div>
-
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  const courseList = document.querySelectorAll('.course');
-
-  const chapterContents = [
-    // Nội dung chương của mỗi lớp từ 1 đến 12
-    [
+    const chapterContents = [
+      // Nội dung chương của mỗi lớp từ 1 đến 12
+      [
       // Lớp 12
-      ["Chương I:Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số", "Chương II: Vector và hệ trục tọa độ trong không gian", "Chương III: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "Hoạt động thực hành trải nghiệm"],
-      ["Chương IV: Nguyên hàm và tích phân", "Chương V: Phương pháp tọa độ trong không gian", "Chương VI: Xác suất có điều kiện", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
+        ["Chương I:Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số", "Chương II: Vector và hệ trục tọa độ trong không gian", "Chương III: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "Hoạt động thực hành trải nghiệm"],
+        ["Chương IV: Nguyên hàm và tích phân", "Chương V: Phương pháp tọa độ trong không gian", "Chương VI: Xác suất có điều kiện", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
       // Lớp 11
-      ["Chương I: Hàm số lượng giác và phương trình lượng giác", "Chương II: Dãy số. Cấp số cộng và cấp số nhân", "Chương III: Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm", "Chương IV: Hệ song song trong không gian", "Chương V: Giới hạn. Hàm số liên tục", "Hoạt động thực hành trải nghiệm"],
-      ["Chương VI: Hàm số mũ và hàm số Logarit", "Chương VII: Quan hệ vuông góc trong không gian", "Chương VIII: Các quy tắc tính xác suất", "Chương IX: Đạo hàm", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
+        ["Chương I: Hàm số lượng giác và phương trình lượng giác", "Chương II: Dãy số. Cấp số cộng và cấp số nhân", "Chương III: Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm", "Chương IV: Hệ song song trong không gian", "Chương V: Giới hạn. Hàm số liên tục", "Hoạt động thực hành trải nghiệm"],
+        ["Chương VI: Hàm số mũ và hàm số Logarit", "Chương VII: Quan hệ vuông góc trong không gian", "Chương VIII: Các quy tắc tính xác suất", "Chương IX: Đạo hàm", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
       // Lớp 10
-      ["Chương I: Mệnh đề và tập hợp", "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn", "Chương III: Hệ thức lượng trong tam giác", "Chương IV: Vector", "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm", "Hoạt động thực hành trải nghiệm"],
-      ["Chương VI: Hàm số, đồ thị và ứng dụng", "Chương VII: Phương pháp tọa độ trong mặt phẳng", "Chương VIII: Đại số tổ hợp", "Chương IX: Tính xác suất theo định nghĩa cổ điển", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
+        ["Chương I: Mệnh đề và tập hợp", "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn", "Chương III: Hệ thức lượng trong tam giác", "Chương IV: Vector", "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm", "Hoạt động thực hành trải nghiệm"],
+        ["Chương VI: Hàm số, đồ thị và ứng dụng", "Chương VII: Phương pháp tọa độ trong mặt phẳng", "Chương VIII: Đại số tổ hợp", "Chương IX: Tính xác suất theo định nghĩa cổ điển", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
       // Lớp 9
-      ["Chương I: Phương trình và hệ phương trình bậc nhất hai  ẩn", "Chương II: Phương trình và bất phương trình bậc nhất một ẩn", "Chương III: Căn bậc hai và căn bậc ba", "Chương IV: Hệ thức lượng trong tam giác vuông", "Chương V: Đường tròn", "Hoạt động thực hành trải nghiệm"],
-      ["Chương VI: Hàm số y = ax^2 (a ≠ 0). Phương trình bậc hai một ẩn", "Chương VII: Tần số và tần số tương đối", "Chương VIII: Xác suất của biến cố trong một số mô hình xác suất đơn giản", "Chương IX: Đường tròn ngoại tiếp và đường tròn nội tiếp", "Chương X: Một số hình khối trong thực tiễn", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
-      // Lớp 8
-      ["Chương I: Đa thức", "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng", "Chương III:Tứ giác", "Chương IV: Định lý Thales", "Chương V: Dữ liệu và biểu đồ", "Hoạt động thực hành trải nghiệm"],
-      ["Chương VI: Phân thức đại số", "Chương VII: Phương trình bậc nhất và hàm số bậc nhất", "Chương VIII: Mở đầu về tính xác suất của biến cố", "Chương IX: Tam giác đồng dạng", "Chương X: Một số hình khối trong thực tiễn", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
+        ["Chương I: Phương trình và hệ phương trình bậc nhất hai  ẩn", "Chương II: Phương trình và bất phương trình bậc nhất một ẩn", "Chương III: Căn bậc hai và căn bậc ba", "Chương IV: Hệ thức lượng trong tam giác vuông", "Chương V: Đường tròn", "Hoạt động thực hành trải nghiệm"],
+        ["Chương VI: Hàm số y = ax^2 (a ≠ 0). Phương trình bậc hai một ẩn", "Chương VII: Tần số và tần số tương đối", "Chương VIII: Xác suất của biến cố trong một số mô hình xác suất đơn giản", "Chương IX: Đường tròn ngoại tiếp và đường tròn nội tiếp", "Chương X: Một số hình khối trong thực tiễn", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
+        // Lớp 8
+        ["Chương I: Đa thức", "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng", "Chương III:Tứ giác", "Chương IV: Định lý Thales", "Chương V: Dữ liệu và biểu đồ", "Hoạt động thực hành trải nghiệm"],
+        ["Chương VI: Phân thức đại số", "Chương VII: Phương trình bậc nhất và hàm số bậc nhất", "Chương VIII: Mở đầu về tính xác suất của biến cố", "Chương IX: Tam giác đồng dạng", "Chương X: Một số hình khối trong thực tiễn", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
       // Lớp 7
-      ["Chương I: Số hữu tỉ", "Chương II: Số thực", "Chương III: Góc và đường thẳng song song", "Chương IV: Tam giác bằng nhau", "Chương V: Thu thập và biểu diễn dữ liệu", "Hoạt động thực hành trải nghiệm"],
-      ["Chương VI: Tỉ lệ thức và đại lượng tỉ lệ", "Chương VII: Biểu thức đại số và đa thức một biến", "Chương VIII: Làm quen với biến cố và xác suất của biến cố", "Chương IX: Quan hệ giữa các yếu tố trong một tam giác", "Chương X: Một số hình khối trong thực tiễn", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
+        ["Chương I: Số hữu tỉ", "Chương II: Số thực", "Chương III: Góc và đường thẳng song song", "Chương IV: Tam giác bằng nhau", "Chương V: Thu thập và biểu diễn dữ liệu", "Hoạt động thực hành trải nghiệm"],
+        ["Chương VI: Tỉ lệ thức và đại lượng tỉ lệ", "Chương VII: Biểu thức đại số và đa thức một biến", "Chương VIII: Làm quen với biến cố và xác suất của biến cố", "Chương IX: Quan hệ giữa các yếu tố trong một tam giác", "Chương X: Một số hình khối trong thực tiễn", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
       // Lớp 6
-      ["Chương I: Tập hợp các số tự nhiên", "Chương II: Tính chia hết trong tập hợp các số tự nhiên", "Chương III: Số nguyên", "Chương IV: Một số hình phẳng trong thực tiễn", "Chương V: Tính đối xứng của hình phẳng trong tự nhiên", "Hoạt động thực hành trải nghiệm"],
-      ["Chương VI: Phân số", "Chương VII: Số thập phân", "Chương VIII: Những hình hình học cơ bản", "Chương IX: Dữ liệu và xác suất thực nghiệm", "Hoạt động thực hành trải nghiệm"]
-    ],
-    [
+        ["Chương I: Tập hợp các số tự nhiên", "Chương II: Tính chia hết trong tập hợp các số tự nhiên", "Chương III: Số nguyên", "Chương IV: Một số hình phẳng trong thực tiễn", "Chương V: Tính đối xứng của hình phẳng trong tự nhiên", "Hoạt động thực hành trải nghiệm"],
+        ["Chương VI: Phân số", "Chương VII: Số thập phân", "Chương VIII: Những hình hình học cơ bản", "Chương IX: Dữ liệu và xác suất thực nghiệm", "Hoạt động thực hành trải nghiệm"]
+      ],
+      [
       // Lớp 5
-      ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Số thập phân", "Chủ đề 3: Một số đơn vị đo diện tích", "Chủ đề 4: Các phép tính với số thập phân", "Chủ đề 5: Một số hình phẳng. Chu vi và diện tích", "Chủ đề 6: Ôn tập học kì 1"],
-      ["Chủ đề 7: Tỉ số và các  bài toán liên quan", "Chủ đề 8: Thể tích. Đơn vị đo thể tích", "Chủ đề 9: Diện tích và thể tích của một số hình khối", "Chủ đề 10: Số đo thời gian. Vận tốc. Các bài toán liên quan đến chuyển động đều", "Chủ đề  11: Một số yếu tố thống kê và xác suất", "Chủ đề 12: Ôn tập cuối năm"]
-    ],
-    [
-      // Lớp 4
-      ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Góc và đơn vị đo góc", "Chủ đề 3: Số có nhiều chữ số", "Chủ đề 4: Một số đơn vị đo đại lượng", "Chủ đề 5: Phép cộng và phép trừ", "Chủ đề 6: Đường thẳng vuông góc. Đường thẳng song song", "Chủ đề 7: Ôn tập học kì 1"],
-      ["Chủ đề 8: Phép nhân và phép chia", "Chủ đề 9: Làm quen với yếu tố thống kê, xác suất", "Chủ đề 10: Phân số", "Chủ đề 11: Phép cộng, phép trừ phân số", "Chủ đề 12: Phép nhân, phép chia phân số", "Chủ đề 13: Ôn tập cuối năm"]
-    ],
-    [
+        ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Số thập phân", "Chủ đề 3: Một số đơn vị đo diện tích", "Chủ đề 4: Các phép tính với số thập phân", "Chủ đề 5: Một số hình phẳng. Chu vi và diện tích", "Chủ đề 6: Ôn tập học kì 1"],
+        ["Chủ đề 7: Tỉ số và các  bài toán liên quan", "Chủ đề 8: Thể tích. Đơn vị đo thể tích", "Chủ đề 9: Diện tích và thể tích của một số hình khối", "Chủ đề 10: Số đo thời gian. Vận tốc. Các bài toán liên quan đến chuyển động đều", "Chủ đề  11: Một số yếu tố thống kê và xác suất", "Chủ đề 12: Ôn tập cuối năm"]
+      ],
+      [
+        // Lớp 4
+        ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Góc và đơn vị đo góc", "Chủ đề 3: Số có nhiều chữ số", "Chủ đề 4: Một số đơn vị đo đại lượng", "Chủ đề 5: Phép cộng và phép trừ", "Chủ đề 6: Đường thẳng vuông góc. Đường thẳng song song", "Chủ đề 7: Ôn tập học kì 1"],
+        ["Chủ đề 8: Phép nhân và phép chia", "Chủ đề 9: Làm quen với yếu tố thống kê, xác suất", "Chủ đề 10: Phân số", "Chủ đề 11: Phép cộng, phép trừ phân số", "Chủ đề 12: Phép nhân, phép chia phân số", "Chủ đề 13: Ôn tập cuối năm"]
+      ],
+      [
       // Lớp 3
-      ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Bảng nhân, bảng chia", "Chủ đề 3: Làm quen với hình phẳng, hình khối", "Chủ đề 4: Phép nhân, phép chia trong phạm vi 100", "Chủ đề 5: Một số đơn vị đo độ dài, khối lượng, dung tích và nhiệt độ", "Chủ đề 6: Phép nhân, phép chia trong phạm vi 1 000", "Chủ đề 7: Ôn tập học kì 1"],
-      ["Chủ đề 8: Các số đến 10 000", "Chủ đề 9: Chu vi, diện tích một số hình phẳng", "Chủ đề 10: Cộng, trừ, nhân, chia trong phạm vi 10 000", "Chủ đề 11: Các số đến 100 000", "Chủ đề 12: Cộng, trừ trong phạm vi 100 000", "Chủ đề 13: Xem đồng hồ. Tháng - năm. Tiền Việt Nam", "Chủ đề 14: Nhân, chia trong phạm vi 100 000", "Chủ đề 15: Làm quen với yếu tố thống kê, xác suất", "Chủ đề 16: Ôn tập cuối năm"]
-    ],
-    [
-      // Lớp 2
-      ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Phép cộng, phép trừ trong phạm vi 20", "Chủ đề 3: Làm quen với khối lượng, dung tích", "Chủ đề 4: Phép cộng, phép trừ (có nhớ) trong phạm vi 100", "Chủ đề 5: Làm quen với hình phẳng", "Chủ đề 6: Ngày - giờ, giờ - phút, ngày - tháng", "Chủ đề 7: Ôn tập học kì 1"],
-      ["Chủ đề 8: Phép nhân, phép chia", "Chủ đề 9: Làm quen với hình khối", "Chủ đề 10: Các số trong phạm vi 1 000", "Chủ đề 11: Độ dài và đơn vị đo độ dài. Tiền Việt Nam", "Chủ đề 12: Phép cộng, phép trừ trong phạm vi 1 000", "Chủ đề 13: Làm quen với yếu tố thống kê, xác suất", "Chủ đề 14: Ôn tập cuối năm"]
-    ],
-    [
-      // Lớp 1
-      ["Chủ đề 1: Các số từ 0 đến 10", , "Chủ đề 2: Làm quen với một số hình phẳng", "Chủ đề 3: Phép cộng, phép trừ trong phạm vi 10", "Chủ đề 4: Làm quen với một số hình khối", "Chủ đề 5: Ôn tập học kì 1"],
-      ["Chủ đề 6: Các số đến 100", "Chủ đề 7: Độ dài và đo độ dài", "Chủ đề 8: Phép cộng, phép trừ (không nhớ) trong phạm vi 100", "Chủ đề 9: Thời gian. Giờ và lịch", "Chủ đề 10: Ôn tập cuối năm"]
-    ]
-  ];
+        ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Bảng nhân, bảng chia", "Chủ đề 3: Làm quen với hình phẳng, hình khối", "Chủ đề 4: Phép nhân, phép chia trong phạm vi 100", "Chủ đề 5: Một số đơn vị đo độ dài, khối lượng, dung tích và nhiệt độ", "Chủ đề 6: Phép nhân, phép chia trong phạm vi 1 000", "Chủ đề 7: Ôn tập học kì 1"],
+        ["Chủ đề 8: Các số đến 10 000", "Chủ đề 9: Chu vi, diện tích một số hình phẳng", "Chủ đề 10: Cộng, trừ, nhân, chia trong phạm vi 10 000", "Chủ đề 11: Các số đến 100 000", "Chủ đề 12: Cộng, trừ trong phạm vi 100 000", "Chủ đề 13: Xem đồng hồ. Tháng - năm. Tiền Việt Nam", "Chủ đề 14: Nhân, chia trong phạm vi 100 000", "Chủ đề 15: Làm quen với yếu tố thống kê, xác suất", "Chủ đề 16: Ôn tập cuối năm"]
+      ],
+      [
+        // Lớp 2
+        ["Chủ đề 1: Ôn tập và bổ sung", "Chủ đề 2: Phép cộng, phép trừ trong phạm vi 20", "Chủ đề 3: Làm quen với khối lượng, dung tích", "Chủ đề 4: Phép cộng, phép trừ (có nhớ) trong phạm vi 100", "Chủ đề 5: Làm quen với hình phẳng", "Chủ đề 6: Ngày - giờ, giờ - phút, ngày - tháng", "Chủ đề 7: Ôn tập học kì 1"],
+        ["Chủ đề 8: Phép nhân, phép chia", "Chủ đề 9: Làm quen với hình khối", "Chủ đề 10: Các số trong phạm vi 1 000", "Chủ đề 11: Độ dài và đơn vị đo độ dài. Tiền Việt Nam", "Chủ đề 12: Phép cộng, phép trừ trong phạm vi 1 000", "Chủ đề 13: Làm quen với yếu tố thống kê, xác suất", "Chủ đề 14: Ôn tập cuối năm"]
+      ],
+      [
+        // Lớp 1
+        ["Chủ đề 1: Các số từ 0 đến 10", , "Chủ đề 2: Làm quen với một số hình phẳng", "Chủ đề 3: Phép cộng, phép trừ trong phạm vi 10", "Chủ đề 4: Làm quen với một số hình khối", "Chủ đề 5: Ôn tập học kì 1"],
+        ["Chủ đề 6: Các số đến 100", "Chủ đề 7: Độ dài và đo độ dài", "Chủ đề 8: Phép cộng, phép trừ (không nhớ) trong phạm vi 100", "Chủ đề 9: Thời gian. Giờ và lịch", "Chủ đề 10: Ôn tập cuối năm"]
+      ]
+    ];
 
-  courseList.forEach((course, index) => {
-    course.addEventListener('mouseenter', () => {
-      const chapters = course.querySelector('.chapter-list');
-      if (chapters) {
-        chapters.style.display = 'block';
-      } else {
-        const chapterList = document.createElement('div');
-        chapterList.className = 'chapter-list';
+    courseList.forEach((course, index) => {
+      course.addEventListener('mouseenter', () => {
+        const chapters = course.querySelector('.chapter-list');
+        if (chapters) {
+          chapters.style.display = 'block';
+        } else {
+          const chapterList = document.createElement('div');
+          chapterList.className = 'chapter-list';
         
-        const currentCourseChapters = chapterContents[index]; // Lấy nội dung chương cho lớp hiện tại
+          const currentCourseChapters = chapterContents[index]; // Lấy nội dung chương cho lớp hiện tại
         
-        currentCourseChapters.forEach((category, i) => {
-          const categoryTitle = document.createElement('p');
-          categoryTitle.textContent = i === 0 ? 'Tập 1:' : 'Tập 2:';
-          categoryTitle.classList.add(i === 0 ? 'algebra' : 'geometry');
-          chapterList.appendChild(categoryTitle);
+          currentCourseChapters.forEach((category, i) => {
+            const categoryTitle = document.createElement('p');
+            categoryTitle.textContent = i === 0 ? 'Tập 1:' : 'Tập 2:';
+            categoryTitle.classList.add(i === 0 ? 'algebra' : 'geometry');
+            chapterList.appendChild(categoryTitle);
           
-          category.forEach((content, j) => {
-            const chapter = document.createElement('p');
-            chapter.innerHTML = ` ${content}`;
-            chapterList.appendChild(chapter);
+            category.forEach((content, j) => {
+              const chapter = document.createElement('p');
+              chapter.innerHTML = ` ${content}`;
+              chapterList.appendChild(chapter);
+            });
           });
-        });
         
-        course.appendChild(chapterList);
-      }
+          course.appendChild(chapterList);
+        }
+      });
+
+      course.addEventListener('mouseleave', () => {
+        const chapters = course.querySelector('.chapter-list');
+        if (chapters) {
+          chapters.style.display = 'none';
+        }
+      });
     });
 
-    course.addEventListener('mouseleave', () => {
-      const chapters = course.querySelector('.chapter-list');
-      if (chapters) {
-        chapters.style.display = 'none';
-      }
-    });
-  });
+  </script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
 
-</script>
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
+  </script>
+  </div>
+</section>
 </body>
 </html>
