@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 18px; 
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -8,6 +8,7 @@ body {
 
 h1{
     color:rgb(36, 6, 144);
+    font-size: 24px;
 }
 
 #video-container {
@@ -16,7 +17,7 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Sử dụng overflow: auto để hiển thị thanh cuộn khi cần */
+    overflow: hidden; 
 }
 
 #video1 {
@@ -26,31 +27,41 @@ h1{
 }
 
 .content{
-    z-index: 1; /* Đặt z-index cao hơn so với video */
-    position: absolute; /* Đảm bảo nội dung nằm trên video */
+    z-index: 1; 
+    position: absolute;
     top: 0;
     left: 0;
     background: rgba(242, 239, 239, 0.5);
-    padding: 10px;
+    padding: 5px;
     margin: 20px;
     border-radius: 30px;
     border: 2px solid #d8cbcb;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.div1{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.hd-faq-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.div1_1{
-    background-color: #f1ebeb;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    flex: 1 1 30%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.hd-faq-list li {
+  margin: 0 19px 35px;
+}
+
+.blog-support.box {
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
