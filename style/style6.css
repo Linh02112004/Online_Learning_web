@@ -10,48 +10,68 @@ h1{
     color:rgb(36, 6, 144);
 }
 
-#video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+.accordion {
+    background-color: hwb(0 89% 7%);
+    color: #242dac;
+    cursor: pointer;
+    padding: 18px;
     width: 100%;
-    height: 100%;
-    overflow: auto; /* Sử dụng overflow: auto để hiển thị thanh cuộn khi cần */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+    width: 100%; /* Chiều rộng cố định cho thẻ div */
+    padding: 20px; /* Khoảng cách bên trong của thẻ div */
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Chia đều khoảng cách giữa các div con */
+    border-radius: 15px; /* Bo góc của thẻ div chính */
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgb(244, 233, 233);
+    overflow: hidden;
+  }
+  
+
+.accordion:after {
+    content: '\2207';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\00A0";
+  }
+
+  .video-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
 }
 
-#video1 {
+/* Video toàn màn hình */
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
     z-index: -1;
 }
 
-.content{
-    z-index: 1; /* Đặt z-index cao hơn so với video */
-    position: absolute; /* Đảm bảo nội dung nằm trên video */
-    top: 0;
-    left: 0;
-    background: rgba(242, 239, 239, 0.5);
-    padding: 10px;
-    margin: 20px;
-    border-radius: 30px;
-    border: 2px solid #d8cbcb;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-.div1{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.div1_1{
-    background-color: #f1ebeb;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    flex: 1 1 30%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
 
 footer {
     background-color: #333;
