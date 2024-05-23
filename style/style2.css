@@ -14,6 +14,7 @@ body {
 .header{
   display: flex;
   height: 70px;
+  background-color:#97cdea;
 }
 
 .logo{
@@ -21,20 +22,24 @@ body {
 }
 .logo img{
   height: 70px;
+  width: 70px;
   margin-left: 25%;
+  border-radius: 50%;
 }
 
 .tenweb{
   text-align: center;
   width: 55%;
   margin-top: 17px;
+  color:#0711cf;
+  text-shadow: 0.2em 0.1em #333;
 }
 
 .timkiem{
   height: 50%;
   text-align: left;
   width: 25%;
-  background-color: rgb(120, 114, 117);
+  background-color: rgb(32, 6, 104);
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -81,10 +86,6 @@ input:focus {
   border-bottom: 2px white;
 }
 
-.timkiem img{
-  height: 30px;
-}
-
 form{
   margin-top: 17px;
   
@@ -95,113 +96,33 @@ form{
 }
 
 .logo_login img{
-  height: 70px;
+  margin-top: 10%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   margin-left: 25%;
 }
 
 .nav {
-  background-color: #363333;
+  background-color:#a9daf5;
   padding: 10px;
   display: flex;
   justify-content: space-around;
 }
 
 .nav div a{
-  text-decoration: none
+  text-decoration: none;
+  color:#0711cf;
 }
 
-.course {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.chapter-list {
-  display: none;
-  padding-left: 20px;
-}
-
-.chapter-list div {
-  margin-bottom: 5px;
-}
-
-.chapter-list {
-  margin-left: 20px; /* Lùi vào phải */
-  display: none; /* Ẩn ban đầu */
-}
-.algebra {
-  color: blue; /* Màu chữ xanh */
-}
-.geometry {
-  color: blue; /* Màu chữ xanh */
-}.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-@media (max-width: 1000px) {
-    #slideshow-container {
-        margin-right: 0;
-    }
-}
-.slideshow-container {
-  padding:50px;
-  margin: 0 170px;
+.course-list  {
   width: 100%;
-  overflow: auto;
-  max-width: 1000px;
-  position: auto;
-  margin: auto;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 8s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-.divfull {
-  display: flex;
-  
-}
-
-.div4, .div5 {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.div4 {
-  width: 30%;
-}
-
-.div5 {
-  width: 70%;
+  justify-content: center;
+  padding: 10px;
 }
 
 #video-container {
+  opacity: 0.1;
   position: fixed;
   top: 0;
   left: 0;
@@ -217,14 +138,96 @@ img {vertical-align: middle;}
 }
 
 .content {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%; /* Điều chỉnh chiều rộng nếu cần */
   height: 100%; /* Điều chỉnh chiều cao nếu cần */
-  background: rgba(242, 239, 239, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.01);
   box-sizing: border-box;
-  margin-top: 8%;
+  margin-top: 10%;
+  z-index: 1;
+}
+
+.panel {
+  margin: 0 10px;
+  padding: 0 20px;
+  display:none;
+  background-color: #97cdea;
+  overflow: auto; 
+  max-height: 100%;
+  transition: max-height 0.2s ease-out;
+  border-radius: 20px;
+}
+
+.accordion {
+  background-color: #97cdea;
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.5s;
+  border-radius: 20px;
+  border-style: outset;
+}
+
+.active, .accordion:hover {
+  background-color: #87e3de; 
+  width: 100%; /* Chiều rộng cố định cho thẻ div */
+  padding: 10px; /* Khoảng cách bên trong của thẻ div */
+  display:flex;
+  border-radius: 15px; /* Bo góc của thẻ div chính */
+  text-align: center;
+}
+
+.dot .active .fade{
+  width: 5px;
+  height: 5px;
+}
+
+.divl h1{
+  text-align: left;
+  color:rgb(13, 66, 66);
+  margin-left: 20px;
+  border-style: outset;
+}
+
+.slideshow-container {
+  padding: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 10px;
+  background-color: #52a0d0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #0711cf;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 8s;
+}
+
+.divr{
+  width: 50%;
+}
+
+.divl{
+  width: 50%;
 }
