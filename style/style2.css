@@ -10,6 +10,10 @@
 body {
   font-family: Arial, sans-serif;
 }
+section{
+  justify-content: space-around;
+
+}
 
 .header{
   display: flex;
@@ -33,6 +37,10 @@ body {
   margin-top: 17px;
   color:#0711cf;
   text-shadow: 0.2em 0.1em #333;
+}
+
+.tenweb h1{
+  font-size: 30px;
 }
 
 .timkiem{
@@ -115,10 +123,35 @@ form{
   color:#0711cf;
 }
 
-.course-list  {
+.course-list-1  {
   width: 100%;
   justify-content: center;
   padding: 10px;
+}
+
+.course-list-2  {
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.course-list-3  {
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.course-list-1 .panel{
+  background-color: #87e3de;
+}
+
+.course-list-2 .panel{
+  background-color: darksalmon;
+}
+
+.course-list-3 .panel{
+  background-color: lightpink;
 }
 
 #video-container {
@@ -152,9 +185,8 @@ form{
 
 .panel {
   margin: 0 10px;
-  padding: 0 20px;
+  padding: 10px;
   display:none;
-  background-color: #97cdea;
   overflow: auto; 
   max-height: 100%;
   transition: max-height 0.2s ease-out;
@@ -162,7 +194,6 @@ form{
 }
 
 .accordion {
-  background-color: #97cdea;
   color: #000;
   cursor: pointer;
   padding: 10px;
@@ -176,25 +207,39 @@ form{
   border-style: outset;
 }
 
+.course-list-1 .accordion{
+  background-color: #87e3de;
+}
+
+.course-list-2 .accordion{
+  background-color: darksalmon;
+}
+
+.course-list-3 .accordion{
+  background-color: lightpink;
+}
+
 .active, .accordion:hover {
-  background-color: #87e3de; 
+  background-color: #b4d2d1; 
   width: 100%; /* Chiều rộng cố định cho thẻ div */
   padding: 10px; /* Khoảng cách bên trong của thẻ div */
   display:flex;
   border-radius: 15px; /* Bo góc của thẻ div chính */
-  text-align: center;
+  justify-content: center;
 }
 
 .dot .active .fade{
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
 }
 
 .divl h1{
   text-align: left;
-  color:rgb(13, 66, 66);
+  color:rgb(227, 31, 31);
   margin-left: 20px;
   border-style: outset;
+  border-radius: 20px;
+  margin: 0 10px;
 }
 
 .slideshow-container {
@@ -205,17 +250,13 @@ form{
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 5px;
-  width: 5px;
-  margin: 0 10px;
-  background-color: #52a0d0;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #8fcbf1;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #0711cf;
 }
 
 /* Fading animation */
