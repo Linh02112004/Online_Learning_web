@@ -15,8 +15,23 @@
   display: none;
 }
 
-.class-row {
+.class-row-3,.class-row-2,.class-row-1 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px; 
+}
+
+.class-row-3 .class-btn{
+  border-radius: 25px;
+  background-color: lightpink;
+}
+
+.class-row-2 .class-btn{
+  border-radius: 25px;
+  background-color: darksalmon;
+}
+
+.class-row-1 .class-btn{
+  border-radius: 25px;
+  background-color: #87e3de;
 }

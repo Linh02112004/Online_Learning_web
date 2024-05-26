@@ -272,3 +272,9 @@ form{
 .divl{
   width: 50%;
 }
+
+.highlighted {
+  display: inline;
+  font-weight: bold;
+  background-color: yellow; /* Tùy chỉnh màu nền cho từ khóa in đậm */
+}
