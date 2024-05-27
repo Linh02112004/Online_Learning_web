@@ -312,6 +312,15 @@
             </div>
       </div>
 </div>
+
+    <script>
+      const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+      if (loggedInUser) {
+        document.getElementById('user-info').innerText = 'Xin chào, ${loggedInUser.name}';
+      } else {
+        document.getElementById('user-info').innerText = 'Bạn chưa đăng nhập';
+      }
+    </script>
 </section>
 <script src="./script/script2.js"></script>
 </body>
