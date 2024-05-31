@@ -12,8 +12,6 @@
         <div class="video-background-container">
           <video class="video-background" autoplay muted loop>
               <source src="./anh/background/video1.mp4" type="video/mp4">
-              <!-- Thêm các định dạng khác nếu cần -->
-              Your browser does not support the video tag.
           </video>  
           <h1>Hướng dẫn đăng kí học </h1>
           <button class="accordion">Các bước để bắt đầu học  </button>
@@ -57,22 +55,7 @@
         <p>Quý phụ huynh và học sinh cùng xem hướng dẫn đăng nhập chi tiết.</p>
       </div>
       
-      <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      </script>
+      <script src="./script/script6.js"></script>
      </main> 
     <footer>
         <p>&copy; 2024, Ho tro hoc toan truc tuyen.</p>
