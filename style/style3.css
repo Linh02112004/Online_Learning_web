@@ -1,61 +1,103 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    margin: 0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+}
+
+header {
+    background-color:#97cdea;
+    color: white;
+    padding: 10px 0;
+}
+
+.hero {
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
-    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-h1{
-    color:rgb(36, 6, 144);
+nav ul li {
+    margin: 0 15px;
+    width: 25%;  
+    font-size: 20px;
 }
 
-#video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Sử dụng overflow: auto để hiển thị thanh cuộn khi cần */
+nav ul li a{
+    text-decoration: none;
 }
 
-#video1 {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.content{
-    z-index: 1; /* Đặt z-index cao hơn so với video */
-    position: absolute; /* Đảm bảo nội dung nằm trên video */
-    top: 0;
-    left: 0;
-    background: rgba(242, 239, 239, 0.5);
-    padding: 10px;
-    margin: 20px;
-    border-radius: 30px;
-    border: 2px solid #d8cbcb;
+img{
+    height: 30px;
+    width: 30px;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+
+section{
+    padding: 20px;
+}
+
+.container {
+    background-color:#c1dfef;
+    padding: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.div1{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.container_ {
+    background-color:#c1dfef;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.div1_1{
-    background-color: #f1ebeb;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    flex: 1 1 30%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.ndung_{
+    background-color:#e7f1f6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    margin: 50px;
+    border-radius: 30px;
+    overflow:hidden;
+}
+
+.ndung{
+    display: flex;
 }
 
 footer {
-    background-color: #333;
+    background-color:#97cdea;
     color: white;
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
+}
+
+h1{
+    color:#791e1e;
+    font-style: italic;
+}
+
+.dbiet{
+    margin-left: 30px;
 }
