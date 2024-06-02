@@ -11,6 +11,16 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+
+  acc[i].addEventListener("mouseover", function() {
+    var panel = this.nextElementSibling;
+    panel.style.display = "block";
+  });
+
+  acc[i].addEventListener("mouseout", function() {
+    var panel = this.nextElementSibling;
+    panel.style.display = "none";
+  });
 }
 
 let slideIndex = 0;
