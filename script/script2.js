@@ -1,25 +1,53 @@
 var acc = document.getElementsByClassName("accordion");
 var i;
+var timer; // Biến để lưu trữ thời gian chờ trước khi đóng accordion
+
+function closeAllAccordions() {
+  var allAccordions = document.getElementsByClassName("accordion");
+  for (var j = 0; j < allAccordions.length; j++) {
+    var panel = allAccordions[j].nextElementSibling;
+    allAccordions[j].classList.remove("active");
+    panel.style.display = "none";
+  }
+}
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+  acc[i].addEventListener("mouseenter", function() {
+    // Đóng tất cả các accordion
+    closeAllAccordions();
 
-  acc[i].addEventListener("mouseover", function() {
+    // Mở accordion hiện tại
+    this.classList.add("active");
     var panel = this.nextElementSibling;
     panel.style.display = "block";
   });
 
+  // Thêm sự kiện mouseover cho accordion
+  acc[i].addEventListener("mouseover", function() {
+    clearTimeout(timer); // Xóa bộ đếm nếu đã được đặt trước đó
+    var panel = this.nextElementSibling;
+    panel.style.display = "block";
+  });
+
+  // Thêm sự kiện mouseout cho accordion
   acc[i].addEventListener("mouseout", function() {
     var panel = this.nextElementSibling;
-    panel.style.display = "none";
+    // Đặt một thời gian chờ trước khi đóng accordion
+    timer = setTimeout(function() {
+      panel.style.display = "none";
+    }, 1000); // Đặt thời gian chờ 
+  });
+
+  var panel = acc[i].nextElementSibling;
+  panel.addEventListener("mouseover", function() {
+    clearTimeout(timer);
+  });
+
+  panel.addEventListener("mouseout", function() {
+    var panel = this;
+    timer = setTimeout(function() {
+      panel.style.display = "none";
+    }, 1000);
   });
 }
 

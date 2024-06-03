@@ -173,8 +173,12 @@ form{
 }
 
 #video1 {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -288,10 +292,4 @@ form{
 
 .divl{
   width: 50%;
-}
-
-.highlighted {
-  display: inline;
-  font-weight: bold;
-  background-color: yellow; /* Tùy chỉnh màu nền cho từ khóa in đậm */
 }
