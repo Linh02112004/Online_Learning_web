@@ -1,43 +1,43 @@
 const questions = [
             {
                 image: 'De/Câu1.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
                 correctAnswer: 2
             },
             {
                 image: 'De/Câu2.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
                 correctAnswer: 1
             },
             {
                 image: 'De/Câu3.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
-                correctAnswer: 0
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
+                correctAnswer: 2
             },
             {
                 image: 'De/Câu4.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
-                correctAnswer: 3
-            },
-            {
-                image: 'De/Câu5.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
                 correctAnswer: 0
             },
             {
+                image: 'De/Câu5.jpg',
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
+                correctAnswer: 1
+            },
+            {
                 image: 'De/Câu6.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
                 correctAnswer: 1
             },
             {
                 image: 'De/Câu7.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
                 correctAnswer: 0
             },
             {
                 image: 'De/Câu8.jpg',
                 answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
-                correctAnswer: 0
+                correctAnswer: 1
             },
             {
                 image: 'De/Câu9.jpg',
@@ -46,8 +46,8 @@ const questions = [
             },
             {
                 image: 'De/Câu10.jpg',
-                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
-                correctAnswer: 2
+                answers: ['Đáp án A', 'Đáp án B', 'Đáp án C'],
+                correctAnswer: 1
             },
         ];
 
