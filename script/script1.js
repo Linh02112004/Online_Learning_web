@@ -1,4 +1,13 @@
 const users = JSON.parse(localStorage.getItem('users')) || [];
+const signupForm = document.getElementById('register-form');
+const loginForm = document.getElementById('login-form');
+const signupName = document.getElementById('signup-name');
+const signupEmail = document.getElementById('signup-email');
+const signupPassword = document.getElementById('signup-password');
+const confirmPassword = document.getElementById('confirm-password');
+const errorMessage = document.getElementById('error-message');
+const loginEmail = document.getElementById('email');
+const loginPassword = document.getElementById('password');
 
 function showSignupForm() {
     document.getElementById('login-container').style.display = 'none';
@@ -10,36 +19,39 @@ function showLoginForm() {
     document.getElementById('login-container').style.display = 'block';
 }
 
-document.getElementById('register-form').addEventListener('submit', function(event) {
+signupForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    const name = document.getElementById('signup-name').value;
-    const email = document.getElementById('signup-email').value;
-    const password = document.getElementById('signup-password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
-    const errorMessage = document.getElementById('error-message');
-      
-    if (password !== confirmPassword) {
+    const name = signupName.value;
+    const email = signupEmail.value;
+    const password = signupPassword.value;
+    const confirmPass = confirmPassword.value;
+    
+    // Kiểm tra mật khẩu nhập lại
+    if (password !== confirmPass) {
         errorMessage.textContent = 'Mật khẩu nhập lại chưa đúng.';
         return;
     }
 
+    // Kiểm tra email đã tồn tại
     const existingUser = users.find(user => user.email === email);
     if (existingUser) {
-        alert('Email đã được đăng ký.');
+        errorMessage.textContent = 'Email đã được đăng ký.';
         return;
     }
 
+    // Thêm người dùng mới
     const newUser = { name, email, password };
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
     alert('Đăng ký thành công.');
 });
 
-document.getElementById('login-form').addEventListener('submit', function(event) {
+loginForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const email = loginEmail.value;
+    const password = loginPassword.value;
 
+    // Xác thực đăng nhập
     const user = users.find(user => user.email === email && user.password === password);
     if (!user) {
         alert('Email hoặc mật khẩu không đúng.');
@@ -49,8 +61,3 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     localStorage.setItem('loggedInUser', JSON.stringify(user));
     window.location.href = './index.html';
 });
-
-function logout() {
-    localStorage.removeItem('loggedInUser');
-    window.location.href = './index.html';
-}
