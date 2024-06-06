@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+.container {
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+   padding: 0 20px;
+}
+.div1{
+    height: 80px;
+    border-radius: 5px;
+    background-color:lightblue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2{
+  color:crimson;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ffffff;
+  background-color: #e6e6e6;
+  width: 25%;
+  height: 200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: rgb(0, 0, 0);
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #dfdfdf;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #898989;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #fcfcfc;
+  width: 70%;
+  border-left: none;
+  height: 100%;
+}
+video {
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+    width : 1400px;
+    
+  }
+
+  video:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  .div3{
+    
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-style:groove;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
