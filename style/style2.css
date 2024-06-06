@@ -131,6 +131,10 @@ form{
   color:#0711cf;
 }
 
+.nav div a:hover {
+  text-decoration: underline;
+}
+
 .course-list-1  {
   width: 100%;
   justify-content: center;

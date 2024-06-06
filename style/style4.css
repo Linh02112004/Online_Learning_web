@@ -1,3 +1,7 @@
+body{
+  font-family: Arial, sans-serif;
+  padding-top: 0px;
+}
 .class-btn {
   display: inline-block;
   padding: 20px 40px; 
@@ -34,4 +38,77 @@
 .class-row-1 .class-btn{
   border-radius: 25px;
   background-color: #87e3de;
+}
+
+.header{
+  display: flex;
+  height: 80px;
+  background-color:#97cdea;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo{
+  width: 10%;
+}
+.logo img{
+  height: 70px;
+  width: 70px;
+  margin-left: 25%;
+  border-radius: 50%;
+}
+
+.tenweb{
+  text-align: center;
+  width: 80%;
+  margin-top: 10px;
+  color:#0711cf;
+  text-shadow: 0.2em 0.1em #333;
+}
+
+.tenweb h1{
+  font-size: 30px;
+}
+ 
+a {
+  color: white;
+  text-align: center;
+  width: 60px;
+  font-size: 15px;
+}
+
+.logo_login{
+  width: 10%;
+}
+
+.logo_login img{
+  margin-top: 10%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 25%;
+}
+
+.nav {
+  background-color:#a9daf5;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;  
+  top: 80px; /* Điều chỉnh giá trị này để di chuyển menu xuống dưới header */
+  left: 0;
+  width: 100%;
+  z-index: 998;
+}
+
+.nav div a{
+  text-decoration: none;
+  color:#0711cf;
+}
+
+.nav div a:hover {
+  text-decoration: underline;
 }

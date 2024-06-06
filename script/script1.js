@@ -44,6 +44,9 @@ signupForm.addEventListener('submit', function(event) {
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
     alert('Đăng ký thành công.');
+
+    // Tự động chuyển sang trang đăng nhập sau khi đăng ký thành công
+    showLoginForm();
 });
 
 loginForm.addEventListener('submit', function(event) {
