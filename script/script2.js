@@ -13,7 +13,6 @@ function closeAllAccordions() {
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("mouseenter", function() {
-    // Đóng tất cả các accordion
     closeAllAccordions();
 
     // Mở accordion hiện tại
@@ -35,7 +34,7 @@ for (i = 0; i < acc.length; i++) {
     // Đặt một thời gian chờ trước khi đóng accordion
     timer = setTimeout(function() {
       panel.style.display = "none";
-    }, 1000); // Đặt thời gian chờ 
+    }, 1000);
   });
 
   var panel = acc[i].nextElementSibling;
@@ -67,10 +66,10 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";  
 dots[slideIndex-1].className += " active";
-setTimeout(showSlides, 2000); // Change image every 2 seconds
+setTimeout(showSlides, 2000);
 }
 
-document.getElementById("sreach").addEventListener("keypress", function(event) {//gắn sự kiện enter cho sreach, knao ẩn enter thì hàm sreach() đc thực hiện
+document.getElementById("sreach").addEventListener("keypress", function(event) {//gắn sự kiện enter cho sreach, knao ấn enter thì hàm sreach() đc thực hiện
     if (event.key === "Enter") {
       search();
     }
@@ -112,6 +111,22 @@ document.addEventListener('DOMContentLoaded', function() {
       showLoginOptions();
   }
 
+function showLoginOptions() {
+    // Hiển thị các tùy chọn đăng nhập và đăng ký
+    const loginOptions = document.createElement('div');
+    loginOptions.classList.add('login-options');
+    loginOptions.innerHTML = '<a href="./index1_dangnhap.html">Đăng nhập</a>';
+    logoLogin.appendChild(loginOptions);
+}
+
+function showLoggedInUserInfo(user) {
+  // Hiển thị tên người dùng và nút đăng xuất
+  const userInfo = document.createElement('div');
+  userInfo.classList.add('user-info');
+  userInfo.innerHTML = 'Xin chào '  + user.name + '<button class="logout-button">Đăng xuất</button>';
+  logoLogin.appendChild(userInfo);
+}
+
   // Thêm sự kiện mouseover cho logo login
   logoLogin.addEventListener('mouseover', function() {
       const userInfo = document.querySelector('.user-info');
@@ -137,21 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  function showLoggedInUserInfo(user) {
-      // Hiển thị tên người dùng và nút đăng xuất
-      const userInfo = document.createElement('div');
-      userInfo.classList.add('user-info');
-      userInfo.innerHTML = 'Xin chào'  + user.name + '<button class="logout-button">Đăng xuất</button>';
-      logoLogin.appendChild(userInfo);
-  }
 
-  function showLoginOptions() {
-      // Hiển thị các tùy chọn đăng nhập và đăng ký
-      const loginOptions = document.createElement('div');
-      loginOptions.classList.add('login-options');
-      loginOptions.innerHTML = '<a href="./index1_dangnhap.html">Đăng nhập</a> / <a href="./index1_dangnhap.html">Đăng ký</a>';
-      logoLogin.appendChild(loginOptions);
-  }
 });
 
 function logout() {
