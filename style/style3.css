@@ -11,8 +11,6 @@ body {
 
 header {
     background-color:#97cdea;
-    color: white;
-    padding: 10px 0;
 }
 
 .hero {
@@ -20,6 +18,12 @@ header {
     padding: 100px 20px;
     text-align: center;
     color: white;
+}
+
+nav{
+    background-color:#a7d6f0;
+    height: 40px;
+    padding: 0 10px;
 }
 
 nav ul {
@@ -32,11 +36,13 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    width: 25%;  
-    font-size: 20px;
+    width: 33.33%;  
+    font-size: 30px;
+    text-align: center;
 }
 
 nav ul li a{
+    font-style: italic;
     text-decoration: none;
 }
 
@@ -86,11 +92,116 @@ section{
     display: flex;
 }
 
-h1{
-    color:#791e1e;
-    font-style: italic;
-}
-
 .dbiet{
     margin-left: 30px;
 }
+
+header {
+    height: 15%;
+    background-color: #97cdea;
+    width: 100%;
+    top: 0;
+    left:0;
+}
+  
+.header{
+    display: flex;
+}
+  
+.logo{
+    width: 10%;
+}
+  
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+  
+.tenweb{
+    text-align: center;
+    width: 75%;
+    color:#0711cf;
+}
+  
+.tenweb h1{
+    font-size: 40px;
+    font-family: 'Montserrat',sans-serif;
+}
+   
+a {
+    text-align: center;
+    width: 20%;
+    font-size: 15px;
+}
+  
+.logo_login{
+    width: 15%;
+}
+  
+.logo_login img{
+    margin-top: 3%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15%;
+}
+  
+.nav {
+    background-color:#a9daf5;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around; 
+    left: 0;
+    width: 100%;
+}
+  
+.nav div a{
+    text-decoration: none;
+    color:#0711cf;
+}
+  
+.nav div a:hover {
+    text-decoration: underline;
+}
+
+button{
+    height: 30px;
+    text-align: center;
+    border-radius: 25px;
+  }
+  
+  .login-options a {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #050110fe; 
+    border: 1px solid rgb(93, 199, 241);
+    text-decoration: none;
+    margin-left: 3.5%;
+    border-radius: 5px;
+    background-color: rgb(93, 199, 241);
+  }
+  
+  .login-options a:hover {
+    background-color: rgb(131, 241, 207);
+    color: #2b1985; 
+    border-style: outset;
+  }
+  
+  .user-info button {
+    font-size: 15px; 
+    font-weight: bold; 
+    color: #050110fe; 
+    border: 1px solid rgb(93, 199, 241);
+    text-decoration: none;
+    margin-left: 10%;
+    border-radius: 5px;
+    background-color: rgb(93, 199, 241);
+  }
+  
+  .user-info button:hover {
+    background-color: rgb(131, 241, 207);
+    color: #2b1985; 
+    border-style: outset;
+  }

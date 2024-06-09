@@ -1,13 +1,17 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url("https://img.freepik.com/premium-vector/hand-drawn-teacher-s-day-background-spanish_23-2149354764.jpg?w=1060");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 2%;
+  border: 1px solid #0d090959;
+  border-radius: 10%;
+  background-color: #ffffff92;
 }
 
 h2 {
@@ -15,7 +19,7 @@ h2 {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 5%;
 }
 
 label {
@@ -41,7 +45,7 @@ button {
   background-color: #4CAF50;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 1%;
   cursor: pointer;
 }
 
