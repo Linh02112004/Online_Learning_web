@@ -8,25 +8,26 @@ body {
   font-family: Arial, sans-serif;
   padding-top: 0px;
 }
-section{
-  justify-content: space-around;
 
+header {
+  height: 15%;
+  background-color: #97cdea;
+  width: 100%;
+  top: 0;
+  left:0;
+  position: fixed;
+  z-index: 2;
 }
 
 .header{
   display: flex;
-  height: 11%;
-  background-color:#97cdea;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
+  padding: 5px;
 }
 
 .logo{
   width: 10%;
 }
+
 .logo img{
   height: 70px;
   width: 70px;
@@ -38,16 +39,26 @@ section{
   text-align: center;
   width: 55%;
   color:#0711cf;
-  margin-top: 1%;
 }
 
 .tenweb h1{
   font-size: 40px;
   font-family: 'Montserrat',sans-serif;
 }
+ 
+a {
+  color: white;
+  text-align: center;
+  width: 20%;
+  font-size: 15px;
+}
+
+main{
+  height: 85%;
+}
 
 .timkiem{
-  height: 50%;
+  height: 100%;
   text-align: left;
   width: 25%;
   background-color: rgb(32, 6, 104);
@@ -115,8 +126,7 @@ form{
   background-color:#a9daf5;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
-  position: fixed;  
+  justify-content: space-around; 
   top: 80px; 
   left: 0;
   width: 100%;
