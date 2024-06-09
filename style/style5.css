@@ -16,11 +16,12 @@ header {
     width: 100%;
     top: 0;
     left:0;
+    position:fixed;
+    z-index: 2;
   }
   
   .header{
     display: flex;
-    padding: 10px;
   }
   
   .logo{
@@ -32,6 +33,7 @@ header {
     width: 70px;
     margin-left: 25%;
     border-radius: 50%;
+    margin-top: 1%;
   }
   
   .tenweb{
@@ -98,6 +100,7 @@ header {
 }
 
 .content{
+    margin-left: 0.1%;
     margin-top: 15%;
     z-index: 1;
     left: 0;
