@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (loggedInUser) {
       showLoggedInUserInfo(loggedInUser);
   } else {
-      showLoginOptions();
+    window.location.href = "./index1_dangnhap.html";
   }
 
 function showLoginOptions() {
