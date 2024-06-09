@@ -39,6 +39,7 @@ header {
   text-align: center;
   width: 55%;
   color:#0711cf;
+  margin-top: 1%;
 }
 
 .tenweb h1{
@@ -67,6 +68,10 @@ main{
   justify-content: center;
   align-items: center;
   margin-top: 17px;
+}
+
+.timkiem input[type="text"] {
+  height: 40px;
 }
 
 input {
@@ -270,6 +275,7 @@ form{
 }
 
 .divl h1{
+  font-size: 30px;
   text-align: center;
   color:rgb(227, 31, 31);
   margin-left: 20px;
