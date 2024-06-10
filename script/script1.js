@@ -6,7 +6,7 @@ const signupEmail = document.getElementById('signup-email');
 const signupPassword = document.getElementById('signup-password');
 const confirmPassword = document.getElementById('confirm-password');
 const errorMessage = document.getElementById('error-message');
-const loginEmail = document.getElementById('signup-email');
+const loginEmail = document.getElementById('login-email');
 const loginPassword = document.getElementById('password');
 
 function showSignupForm() {
