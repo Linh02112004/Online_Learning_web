@@ -34,7 +34,7 @@ for (i = 0; i < acc.length; i++) {
     // Đặt một thời gian chờ trước khi đóng accordion
     timer = setTimeout(function() {
       panel.style.display = "none";
-    }, 1000);
+    }, 10);
   });
 
   var panel = acc[i].nextElementSibling;
@@ -46,7 +46,7 @@ for (i = 0; i < acc.length; i++) {
     var panel = this;
     timer = setTimeout(function() {
       panel.style.display = "none";
-    }, 1000);
+    }, 10);
   });
 }
 
