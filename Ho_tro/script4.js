@@ -51,8 +51,3 @@ form.addEventListener('submit', (event) => {
     }
 });
 
-function isValidEmail(email) {
-    // Kiểm tra định dạng email hợp lệ
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}

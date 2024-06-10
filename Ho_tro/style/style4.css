@@ -46,14 +46,22 @@ body {
   justify-content: center;
   align-items: center;
   border-style: groove;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-right: 10px;
-  width: 70%;
+  width: 90%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .div2 .form-group {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.div2 .form-group label {
+  flex-basis: 30%;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .submit-btn {
@@ -63,7 +71,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: auto;
+    margin-left: 50%;
 }
 
 .form-group {
@@ -78,8 +86,10 @@ body {
 }
 
 .form-group input, .form-group textarea {
-  flex: 1;
+  flex: 0 0 400px;
   padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  flex-basis: 50%; 
+  height: auto;
 }
